@@ -22,8 +22,7 @@ You will learn how to do [data prep](#Data), how to [train](#Train), how to [run
 installation_content = """%%capture
 !pip install unsloth
 # Also get the latest nightly Unsloth!
-!pip uninstall unsloth -y && pip install --upgrade --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git
-"""
+!pip install --upgrade --no-cache-dir --no-deps --ignore-installed git+https://github.com/unslothai/unsloth.git"""
 
 installation_kaggle_content = """%%capture
 # Kaggle is slow - you'll have to wait 5 minutes for it to install.
@@ -33,8 +32,7 @@ installation_kaggle_content = """%%capture
 !pip install unsloth"""
 
 new_announcement_content_non_vlm = """* We support Llama 3.2 Vision 11B, 90B; Pixtral; Qwen2VL 2B, 7B, 72B; and any Llava variant like Llava NeXT!
-* We support 16bit LoRA via `load_in_4bit=False` or 4bit QLoRA. Both are accelerated and use much less memory!
-"""
+* We support 16bit LoRA via `load_in_4bit=False` or 4bit QLoRA. Both are accelerated and use much less memory!"""
 
 new_announcement_content_vlm = """**We also support finetuning ONLY the vision part of the model, or ONLY the language part. Or you can select both! You can also select to finetune the attention or the MLP layers!**"""
 
